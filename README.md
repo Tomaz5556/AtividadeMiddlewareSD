@@ -1,18 +1,5 @@
-## Getting Started
+## Chamada-Remota-RMI-SD
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Atividade prática realizada para a disciplina de sistemas distribuídos sob orientação do professor Jefferson Silva Lopes.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O intuito é realizar chamadas remotas de métodos via RMI do java. Para o desenvolvimento do trabalho, foi utilizado um miniprojeto em Java (programa que multiplica três números reais). O print a seguir mostra a chamada remota sendo realizada:
