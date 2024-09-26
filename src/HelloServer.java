@@ -21,8 +21,8 @@ public class HelloServer implements Hello {
 		} 
 	}
 
-	public String hello() throws RemoteException {
-		System.out.println("Executando metodo neste host");
-		return "Ola!!!! Consegui executar o metodo remoto!!!";
-	}
+	public float hello(float a, float b, float c) throws RemoteException {
+        System.out.println("Executando metodo neste host, fazendo a multiplicação dos três números");
+        return b * b - 4 * a * c;
+    }
 }

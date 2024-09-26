@@ -1,5 +1,5 @@
 import java.rmi.*;
  
 public interface Hello extends Remote {
-   public String hello() throws RemoteException;
+   public float hello(float a, float b, float c) throws RemoteException;
 }
