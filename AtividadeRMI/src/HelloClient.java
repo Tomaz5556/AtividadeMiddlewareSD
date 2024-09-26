@@ -5,6 +5,9 @@ public class HelloClient {
 	public static void main(String[] args) {
 		try {
 			try (Scanner scanner = new Scanner(System.in)) {
+				// Chama o método do servidor e imprime a mensagem
+				System.out.println("Invocando metodo do servidor");
+				
 				System.out.println("Digite o valor do primeiro número (a):");
 				float a = scanner.nextFloat();
 
@@ -21,8 +24,6 @@ public class HelloClient {
 				// Procura a stub do servidor
 				Hello stub = (Hello) registry.lookup("Servidor");
 
-				// Chama o método do servidor e imprime a mensagem
-				System.out.println("Invocando metodo do servidor");
 				float delta = stub.hello(a, b, c);
 				System.out.println("Servidor informa: o valor da multiplicação é " + delta);
 			} 
