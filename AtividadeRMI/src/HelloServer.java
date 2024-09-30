@@ -1,6 +1,6 @@
 import java.rmi.*;
-import java.rmi.server.*;
 import java.rmi.registry.*;
+import java.rmi.server.*;
 
 public class HelloServer implements Hello {
 	public HelloServer() {}  // Construtor
@@ -22,7 +22,7 @@ public class HelloServer implements Hello {
 	}
 
 	public float hello(float a, float b, float c) throws RemoteException {
-        System.out.println("Executando metodo neste host, fazendo a multiplicação dos três números");
+        System.out.println("Executando metodo neste host, o cálculo do valor de delta da fórmula de Bhaskara");
         return b * b - 4 * a * c;
     }
 }

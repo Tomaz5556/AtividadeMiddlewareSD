@@ -8,13 +8,13 @@ public class HelloClient {
 				// Chama o método do servidor e imprime a mensagem
 				System.out.println("Invocando metodo do servidor");
 				
-				System.out.println("Digite o valor do primeiro número (a):");
+				System.out.println("Digite o valor de (a):");
 				float a = scanner.nextFloat();
 
-				System.out.println("Digite o valor do segundo número (b):");
+				System.out.println("Digite o valor de (b):");
 				float b = scanner.nextFloat();
 
-				System.out.println("Digite o valor do terceiro número (c):");
+				System.out.println("Digite o valor de (c):");
 				float c = scanner.nextFloat();
 
 				// Procura o registro do RMI no Servidor
@@ -25,7 +25,9 @@ public class HelloClient {
 				Hello stub = (Hello) registry.lookup("Servidor");
 
 				float delta = stub.hello(a, b, c);
-				System.out.println("Servidor informa: o valor da multiplicação é " + delta);
+				System.out.println("Servidor informa: o valor de delta é " + delta);
+				System.out.println("Pois:");
+				System.out.println(delta + " = " + b + "² - 4 . " + a + " . " + c);
 			} 
 		} catch (Exception ex) {
 			ex.printStackTrace();
